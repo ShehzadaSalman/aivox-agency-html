@@ -971,6 +971,35 @@ const tl = gsap.timeline({
   tl.to(".tp_fade_rightt", {
 	rotateZ: 360,
   });
-  
+
+  // FAQ Toggle Functionality
+  $('.faq-question').on('click', function() {
+    const $faqItem = $(this).closest('.faq-item');
+    const $faqAnswer = $faqItem.find('.faq-answer');
+    const $faqToggle = $faqItem.find('.faq-toggle');
+    
+    // Close all other FAQ items
+    if (!$faqItem.hasClass('active')) {
+      $('.faq-item').removeClass('active');
+      $('.faq-answer').css('max-height', '0').removeClass('active');
+      $('.faq-toggle').text('+');
+    }
+    
+    // Toggle current FAQ item
+    $faqItem.toggleClass('active');
+    
+    if ($faqItem.hasClass('active')) {
+      $faqAnswer.css('max-height', $faqAnswer[0].scrollHeight + 'px');
+      $faqToggle.text('×');
+    } else {
+      $faqAnswer.css('max-height', '0');
+      $faqToggle.text('+');
+    }
+  });
+
+  // Open first FAQ by default
+  $('.faq-item:first-child').addClass('active');
+  $('.faq-item:first-child .faq-answer').css('max-height', $('.faq-item:first-child .faq-answer')[0].scrollHeight + 'px');
+  $('.faq-item:first-child .faq-toggle').text('×');
 
 })(jQuery);

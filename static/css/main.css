@@ -24,6 +24,120 @@ Color Declaration
 }
 
 /* ///////////////////////////////////////////////////////////
+FAQ Section
+/////////////////////////////////////////////////////////// */
+.faq-area {
+  background-color: var(--clr-common-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-question {
+  padding: 22px 30px;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faq-question h5 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--clr-body-heading);
+  transition: all 0.3s ease;
+}
+
+.faq-toggle {
+  font-size: 24px;
+  color: var(--clr-theme-primary);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 15px;
+  line-height: 1;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: #f9f9f9;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 0 30px;
+  color: var(--clr-body-text);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Active state */
+.faq-item.active .faq-question {
+  background-color: var(--clr-theme-primary);
+}
+
+.faq-item.active .faq-question h5 {
+  color: #fff;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+  color: #fff;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding: 25px 0;
+  border-top: 1px solid #eee;
+}
+
+/* Hover effects */
+.faq-item:not(.active):hover .faq-question {
+  background-color: #f5f5f5;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .faq-question {
+    padding: 18px 20px;
+  }
+  
+  .faq-question h5 {
+    font-size: 16px;
+  }
+  
+  .faq-answer p {
+    padding: 0 20px;
+    font-size: 15px;
+  }
+  
+  .faq-item.active .faq-answer {
+    padding: 20px 0;
+  }
+}
+
+/* ///////////////////////////////////////////////////////////
 Mixin Declaration 
 /////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////
