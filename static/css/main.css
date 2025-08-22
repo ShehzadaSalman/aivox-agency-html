@@ -17,7 +17,7 @@ Color Declaration
   --clr-body-heading: #1b2a52;
   --clr-body-text: #6a738b;
   --clr-color-violet: #e825ec;
-  --clr-theme-primary: #7d25ec;
+  --clr-theme-primary: #d35400;
   --clr-bg-gray: #f6f6f6;
   --clr-bg-gray-2: #f1f1f1;
   --clr-bg-gray-3: #eeeeee;
@@ -40,6 +40,7 @@ Audio Player in Banner
   padding: 20px;
   max-width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 3s ease-in-out infinite;
 }
 
 .audio-player-card:hover {
@@ -59,7 +60,7 @@ Audio Player in Banner
   border-radius: 50%;
   overflow: hidden;
   margin-right: 15px;
-  border: 3px solid #7d25ec;
+  border: 3px solid #ea580c;
   box-shadow: 0 4px 12px rgba(125, 37, 236, 0.2);
 }
 
@@ -95,7 +96,7 @@ Audio Player in Banner
 .wave-segment {
   width: 8px;
   height: calc(var(--height, 0.5) * 30px);
-  background: linear-gradient(180deg, #7d25ec 0%, #4a00e0 100%);
+  background: #1b2a52;
   border-radius: 4px;
   transition: height 0.3s ease;
   animation: wave 1.5s ease-in-out infinite;
@@ -112,6 +113,16 @@ Audio Player in Banner
   }
 }
 
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .audio-controls {
   display: flex;
   align-items: center;
@@ -122,7 +133,7 @@ Audio Player in Banner
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #7d25ec 0%, #4a00e0 100%);
+  background: #1b2a52;
   border: none;
   color: white;
   display: flex;
@@ -130,7 +141,7 @@ Audio Player in Banner
   justify-content: center;
   cursor: pointer;
   margin-right: 15px;
-  box-shadow: 0 5px 15px rgba(125, 37, 236, 0.3);
+  /* box-shadow: 0 5px 15px rgba(125, 37, 236, 0.3); */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -160,7 +171,7 @@ Audio Player in Banner
 .progress {
   width: 30%;
   height: 100%;
-  background: linear-gradient(90deg, #7d25ec 0%, #4a00e0 100%);
+  background: #1b2a52;
   border-radius: 3px;
   transition: width 0.1s linear;
 }
@@ -176,7 +187,7 @@ Audio Player in Banner
   border-radius: 12px;
   padding: 15px;
   margin-top: 15px;
-  border-left: 3px solid #7d25ec;
+  border-left: 3px solid #ea580c;
 }
 
 .transcript-preview p {
@@ -197,7 +208,7 @@ Audio Player in Banner
 .audio-player-caption {
   margin-top: 15px;
   padding: 12px 15px;
-  background: rgba(125, 37, 236, 0.05);
+  background: #f2f2f2;
   border-radius: 8px;
   font-size: 14px;
   color: #4a5568;
@@ -210,11 +221,11 @@ Audio Player in Banner
 .audio-player-caption i {
   font-size: 16px;
   margin-right: 8px;
-  color: #7d25ec;
+  color: #ea580c;
 }
 
 .audio-player-caption strong {
-  color: #7d25ec;
+  color: #ea580c;
   font-weight: 600;
   margin-right: 5px;
 }
@@ -288,7 +299,7 @@ Redesigned Live Call Section
   margin-bottom: 20px;
   color: #1b2a52;
   font-weight: 700;
-  background: linear-gradient(90deg, #7d25ec 0%, #4a00e0 100%);
+  background: #1b2a52;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -337,14 +348,14 @@ Redesigned Live Call Section
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 24px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 .feature-item:hover .feature-icon {
-  background: linear-gradient(135deg, #7d25ec 0%, #4a00e0 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #f16529 100%);
   color: white;
   transform: scale(1.1);
 }
@@ -374,7 +385,7 @@ Redesigned Live Call Section
   border-radius: 50px;
   transition: all 0.3s ease;
   text-decoration: none;
-  background: linear-gradient(135deg, #7d25ec 0%, #4a00e0 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #f16529 100%);
   color: white;
   border: 2px solid transparent;
   box-shadow: 0 10px 25px rgba(125, 37, 236, 0.3);
@@ -386,8 +397,8 @@ Redesigned Live Call Section
 /* Outline Button Variant */
 .live-call-cta .theme-btn.btn-outline {
   background: transparent;
-  color: #7d25ec;
-  border: 2px solid #7d25ec;
+  color: #ea580c;
+  border: 2px solid #ea580c;
   box-shadow: none;
   position: relative;
   z-index: 1;
@@ -395,7 +406,7 @@ Redesigned Live Call Section
 
 .live-call-cta .theme-btn.btn-outline:hover {
   color: white;
-  border-color: #7d25ec;
+  border-color: #ea580c;
 }
 
 .live-call-cta .theme-btn i {
@@ -413,7 +424,7 @@ Redesigned Live Call Section
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(135deg, #4a00e0 0%, #7d25ec 100%);
+  background: linear-gradient(135deg, #f16529 0%, #ea580c 100%);
   transition: all 0.3s ease;
   z-index: -1;
 }
@@ -423,7 +434,7 @@ Redesigned Live Call Section
 }
 
 .live-call-cta .theme-btn.btn-outline:before {
-  background: linear-gradient(135deg, #7d25ec 0%, #4a00e0 100%);
+  background: linear-gradient(135deg, #ea580c 0%, #f16529 100%);
 }
 
 /* Feature Icons */
@@ -481,7 +492,7 @@ Redesigned Live Call Section
   left: 0;
   width: 0;
   height: 100%;
-  background: linear-gradient(135deg, #4a00e0 0%, #7d25ec 100%);
+  background: linear-gradient(135deg, #f16529 0%, #ea580c 100%);
   transition: all 0.3s ease;
   z-index: -1;
 }
@@ -491,7 +502,7 @@ Redesigned Live Call Section
 }
 
 .live-call-content .section-subtitle {
-  color: var(--clr-theme-primary);
+  /* color: var(--clr-theme-primary); */
   font-weight: 600;
   font-size: 16px;
   display: inline-block;
@@ -2878,17 +2889,19 @@ Header CSS 01 Start
   z-index: 99;
 }
 .header-top {
-  background: linear-gradient(90deg, #eb42fa 0%, #7720ff 100%);
-  background: linear-gradient(90deg, #7720ff 0%, #eb42fa 100%);
+  background: #1b2a52;
   height: 40px;
   display: flex;
   align-items: center;
 }
 .header-top-text p {
   color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   margin-bottom: 0;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
 }
 .header-top-social ul {
   display: flex;
@@ -3043,13 +3056,13 @@ Header CSS 01 Start
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background: linear-gradient(180deg, #9b1efe 0%, #6917d0 100%);
+  background: #1b2a52;
   display: block;
   padding: 0 30px;
 }
 .header-action-btn:hover {
   color: #fff;
-  background: linear-gradient(180deg, #7d25ec 0%, #9425ec 100%);
+  background: linear-gradient(180deg, #ea580c 0%, #9425ec 100%);
 }
 
 /* ///////////////////////////////////////////////////////////
@@ -3302,7 +3315,7 @@ Header CSS 01 Start
   display: block;
   padding: 0 30px;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 1199px) {
@@ -3497,7 +3510,7 @@ Header CSS 01 Start
   padding: 0 30px;
   gap: 8px;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 .h4_header-action-btn:hover {
@@ -3820,7 +3833,7 @@ Header CSS 01 Start
   padding: 0 30px;
   gap: 8px;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 1399px) {
@@ -3880,7 +3893,7 @@ Header CSS 01 Start
 /////////////////////////////////////////////////////////// */
 .theme-btn {
   border-radius: 50px;
-  background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+  background: linear-gradient(180deg, #e44d26, #ea580c 100%);
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -3895,13 +3908,13 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn:hover {
-  background: linear-gradient(180deg, #7d25ec 0%, #9425ec 100%);
+  background: #ea580c;
   color: #fff;
 }
 
 .theme-btn-2 {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+  background: linear-gradient(180deg, #9425ec 0%, #ea580c 100%);
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -3916,7 +3929,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn-2:hover {
-  background: linear-gradient(180deg, #7d25ec 0%, #9425ec 100%);
+  background: linear-gradient(180deg, #ea580c 0%, #9425ec 100%);
   color: #fff;
 }
 
@@ -3924,7 +3937,7 @@ Header CSS 01 Start
 04. banner
 /////////////////////////////////////////////////////////// */
 .banner-area {
-  background: #f2f8fd;
+  background: #fff;
   position: relative;
   z-index: 1;
 }
@@ -3973,7 +3986,7 @@ Header CSS 01 Start
   background: rgba(125, 37, 236, 0.1);
   box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.2);
   display: inline-block;
-  color: #7d25ec;
+  color: #ea580c;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -4166,7 +4179,7 @@ Header CSS 01 Start
   }
 }
 .h2_banner-content-subtitle {
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 18px;
   font-weight: 400;
   display: block;
@@ -4368,7 +4381,7 @@ Header CSS 01 Start
 }
 .h2_banner-form form button {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+  background: linear-gradient(180deg, #9425ec 0%, #ea580c 100%);
   border: none;
   color: #fff;
   font-size: 14px;
@@ -4429,7 +4442,7 @@ Header CSS 01 Start
   }
 }
 .h3_banner-content-subtitle {
-  color: #7d25ec;
+  color: #ea580c;
   display: block;
   font-size: 16px;
   font-weight: 500;
@@ -4497,7 +4510,7 @@ Header CSS 01 Start
   display: block;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 .h3_banner-form form button i {
@@ -4877,7 +4890,7 @@ Header CSS 01 Start
 }
 .h4_banner-form form button {
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+  background: linear-gradient(180deg, #9425ec 0%, #ea580c 100%);
   border: none;
   color: #fff;
   font-size: 14px;
@@ -5073,7 +5086,7 @@ Header CSS 01 Start
   display: block;
   flex-shrink: 0;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 .h5_banner-form form button i {
@@ -5303,7 +5316,7 @@ Header CSS 01 Start
 /* ///////////////////////////////////////////////////////////
 06. section
 /////////////////////////////////////////////////////////// */
-.section-subtitle {
+/* .section-subtitle {
   border-radius: 50px;
   background: rgba(125, 37, 236, 0.06);
   box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.2);
@@ -5316,7 +5329,28 @@ Header CSS 01 Start
   height: 36px;
   line-height: 36px;
   margin-bottom: 11px;
+} */
+
+.section-subtitle {
+  border-radius: 50px;
+  background: rgba(
+    27,
+    42,
+    82,
+    0.08
+  ); /* Using your header blue with transparency */
+  box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.15);
+  display: inline-block;
+  color: #1b2a52; /* Your header blue */
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 25px;
+  height: 36px;
+  line-height: 36px;
+  margin-bottom: 11px;
 }
+
 .section-title {
   color: var(--clr-body-heading);
   font-size: 44px;
@@ -5359,7 +5393,7 @@ Header CSS 01 Start
 }
 
 .h2_section-subtitle {
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -5463,7 +5497,7 @@ Header CSS 01 Start
 }
 
 .inner_section-subtitle {
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -6163,17 +6197,17 @@ Header CSS 01 Start
 }
 .h3_work-top-btn a {
   border-radius: 8px;
-  border: 1px solid #7d25ec;
+  border: 1px solid #ea580c;
   height: 44px;
   padding: 0 30px;
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 14px;
   font-weight: 600;
   display: flex;
   align-items: center;
 }
 .h3_work-top-btn a:hover {
-  background-color: #7d25ec;
+  background-color: #ea580c;
   color: #fff;
 }
 
@@ -6240,7 +6274,7 @@ Header CSS 01 Start
 .h5_work-navigation div:hover {
   border-color: transparent;
   color: #fff;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 575px) {
@@ -6293,7 +6327,7 @@ Header CSS 01 Start
   width: 105px;
 }
 .inner_work-item-number h3 {
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 36px;
   font-weight: 500;
   line-height: 1.44;
@@ -6421,7 +6455,7 @@ Header CSS 01 Start
   text-transform: uppercase;
   display: inline-block;
   border-radius: 0px 0px 8px 8px;
-  background: #7d25ec;
+  background: #ea580c;
   padding: 0 12px;
   height: 24px;
   line-height: 24px;
@@ -6499,7 +6533,7 @@ Header CSS 01 Start
   margin-bottom: 15px;
 }
 .price-item-offer {
-  color: #7d25ec;
+  color: #ea580c;
   text-align: center;
   font-size: 13px;
   font-weight: 500;
@@ -6599,7 +6633,7 @@ Header CSS 01 Start
 }
 .price-item.active {
   border-radius: 14px;
-  border: 1.5px solid #7d25ec;
+  border: 1.5px solid #ea580c;
   background: #fff;
   box-shadow: 0px 10px 30px 0px rgba(27, 42, 82, 0.07);
 }
@@ -6833,7 +6867,7 @@ Header CSS 01 Start
 }
 .h3_price-tab ul.nav .nav-item .nav-link.active {
   border-radius: 50px;
-  background: #7d25ec;
+  background: #ea580c;
   color: #fff;
 }
 
@@ -7325,7 +7359,7 @@ Header CSS 01 Start
 }
 .blog-content-meta a {
   border-radius: 40px;
-  background: #7d25ec;
+  background: #ea580c;
   display: block;
   color: #fff;
   font-size: 13px;
@@ -7395,7 +7429,7 @@ Header CSS 01 Start
   z-index: 1;
 }
 .h2_blog-content-meta span a {
-  color: #7d25ec;
+  color: #ea580c;
   text-transform: uppercase;
 }
 .h2_blog-content-meta span i {
@@ -7431,7 +7465,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .h2_blog-content-title:hover a {
-  color: #7d25ec;
+  color: #ea580c;
 }
 
 .h2_blog-active.swiper .h2_blog-pagination span.swiper-pagination-bullet {
@@ -7506,7 +7540,7 @@ Header CSS 01 Start
   text-transform: uppercase;
 }
 .h3_blog-date b {
-  color: #7d25ec;
+  color: #ea580c;
   text-align: center;
   font-size: 26px;
   font-weight: 700;
@@ -7530,7 +7564,7 @@ Header CSS 01 Start
   left: 30px;
   top: -14px;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   display: block;
   height: 28px;
   color: #fff;
@@ -7638,7 +7672,7 @@ Header CSS 01 Start
   width: 5px;
   content: "";
   border-radius: 6px 0px 0px 0px;
-  background: #7d25ec;
+  background: #ea580c;
 }
 @media (max-width: 991px) {
   .blog_details-meta-box {
@@ -7661,7 +7695,7 @@ Header CSS 01 Start
   gap: 8px;
 }
 .blog_details-meta span:first-child {
-  color: #7d25ec;
+  color: #ea580c;
   text-transform: uppercase;
 }
 .blog_details-meta span:not(:last-child) {
@@ -7774,7 +7808,7 @@ Header CSS 01 Start
 }
 .blog_details-content blockquote span {
   display: block;
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -7995,7 +8029,7 @@ Header CSS 01 Start
 .blog_details-bottom .post-comments-btn button {
   border: none;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
   height: 46px;
   display: flex;
@@ -8038,7 +8072,7 @@ Header CSS 01 Start
   width: 100px;
   height: 1px;
   content: "";
-  background-color: #7d25ec;
+  background-color: #ea580c;
 }
 .blog_details-widget-search {
   position: relative;
@@ -8065,7 +8099,7 @@ Header CSS 01 Start
   height: 47px;
   border: none;
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   color: #fff;
   font-size: 15px;
   display: flex;
@@ -8124,7 +8158,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   height: 46px;
   display: flex;
   align-items: center;
@@ -8786,7 +8820,7 @@ Header CSS 01 Start
 .h4_service-navigation div:hover {
   border-color: transparent;
   color: #fff;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
 }
 @media (max-width: 575px) {
@@ -9260,7 +9294,7 @@ Header CSS 01 Start
   transition: all 0.4s linear 0s;
 }
 .h5_shop-img-icon a:hover {
-  background: #7d25ec;
+  background: #ea580c;
   color: #fff;
 }
 .h5_shop-img-icon a:first-child {
@@ -9524,7 +9558,7 @@ Header CSS 01 Start
 }
 .shop_details-action-cart {
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -9551,7 +9585,7 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .shop_details-action-buy:hover {
-  background: #7d25ec;
+  background: #ea580c;
   color: #fff;
 }
 .shop_details-action-box {
@@ -9600,7 +9634,7 @@ Header CSS 01 Start
   font-weight: 500;
 }
 .shop_details-action-2 a:hover {
-  color: #7d25ec;
+  color: #ea580c;
 }
 .shop_details-action-2 a i {
   font-size: 16px;
@@ -9832,7 +9866,7 @@ Header CSS 01 Start
 }
 .shop_details-form-item button {
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   display: flex;
   align-items: center;
   height: 46px;
@@ -10116,7 +10150,7 @@ Header CSS 01 Start
   border-radius: 50%;
 }
 .breadcrumb-list span {
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 17px;
   font-weight: 500;
   line-height: 25px;
@@ -10449,7 +10483,7 @@ Header CSS 01 Start
   padding: 35px 30px 35px;
 }
 .inner_portfolio-content-tag {
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
@@ -10615,7 +10649,7 @@ Header CSS 01 Start
 }
 .wishlist-coupon button {
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -10645,7 +10679,7 @@ Header CSS 01 Start
 }
 .wishlist-cart a {
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -10679,7 +10713,7 @@ Header CSS 01 Start
   }
 }
 .login-content-subtitle {
-  color: #7d25ec;
+  color: #ea580c;
   text-align: center;
   font-size: 14px;
   font-weight: 500;
@@ -10709,7 +10743,7 @@ Header CSS 01 Start
   margin-bottom: 0;
 }
 .login-content-link p a {
-  color: #7d25ec;
+  color: #ea580c;
 }
 .login-content-account {
   display: flex;
@@ -10771,7 +10805,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   height: 46px;
   line-height: 46px;
   color: #fff;
@@ -10815,7 +10849,7 @@ Header CSS 01 Start
   }
 }
 .login-condition a {
-  color: #7d25ec;
+  color: #ea580c;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -11001,7 +11035,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
   height: 46px;
   display: flex;
@@ -11170,7 +11204,7 @@ Header CSS 01 Start
 }
 .checkout-top-item span {
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   height: 32px;
   width: 32px;
   display: flex;
@@ -11228,7 +11262,7 @@ Header CSS 01 Start
   width: 100%;
   border: none;
   border-radius: 8px;
-  background: #7d25ec;
+  background: #ea580c;
   box-shadow: 0px 2px 10px 0px rgba(27, 42, 82, 0.5);
   height: 46px;
   display: flex;
@@ -11297,13 +11331,13 @@ Header CSS 01 Start
   margin-bottom: 35px;
 }
 .checkout-payment-text p a {
-  color: #7d25ec;
+  color: #ea580c;
   text-decoration: underline;
   display: inline-block;
 }
 .checkout-payment-btn {
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11477,7 +11511,7 @@ Header CSS 01 Start
 }
 .cart-coupon button {
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -11534,7 +11568,7 @@ Header CSS 01 Start
 }
 .cart-order-btn {
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11549,7 +11583,7 @@ Header CSS 01 Start
 
 .disable-cart-btn {
   border-radius: 10px;
-  background: #7d25ec;
+  background: #ea580c;
   height: 46px;
   color: #fff;
   font-size: 14px;
@@ -11603,7 +11637,7 @@ Header CSS 01 Start
 33. footer
 /////////////////////////////////////////////////////////// */
 .footer-area {
-  background: #1b2a52;
+  background: #374151;
 }
 .footer-logo {
   margin-bottom: 60px;
@@ -11888,7 +11922,7 @@ Header CSS 01 Start
   top: 50%;
   transform: translateY(-50%);
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+  background: linear-gradient(180deg, #9425ec 0%, #ea580c 100%);
   height: 44px;
   border: none;
   padding: 0 32px;
@@ -12142,7 +12176,7 @@ Header CSS 01 Start
   font-size: 14px;
 }
 .h4_footer-widget-social a:hover {
-  background: #7d25ec;
+  background: #ea580c;
   color: #fff;
   border-color: transparent;
 }
@@ -12295,7 +12329,7 @@ Header CSS 01 Start
   font-size: 14px;
 }
 .h5_footer-widget-social a:hover {
-  background: #7d25ec;
+  background: #ea580c;
   color: #fff;
   border-color: transparent;
 }
@@ -12351,7 +12385,7 @@ Header CSS 01 Start
   top: 50%;
   transform: translateY(-50%);
   border-radius: 8px;
-  background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+  background: linear-gradient(180deg, #9425ec 0%, #ea580c 100%);
   height: 44px;
   border: none;
   padding: 0 32px;
