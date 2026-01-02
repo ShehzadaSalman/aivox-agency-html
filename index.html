@@ -89,8 +89,220 @@
     <link rel="stylesheet" href="static/css/nice-select.css" />
     <link rel="stylesheet" href="static/css/backtotop.css" />
     <link rel="stylesheet" href="static/css/main.css" />
+
+    <style>
+      body.plumber-theme {
+        --plumber-deep: #0e2a47;
+        --plumber-blue: #1b6da8;
+        --plumber-accent: #f47a1f;
+        --plumber-soft: #e8f4ff;
+        --plumber-ice: #f7fbff;
+        --plumber-slate: #6a7f95;
+        --plumber-ink: #0b1b2b;
+        font-family: "Inter", sans-serif;
+        background: var(--plumber-ice);
+        color: var(--plumber-ink);
+      }
+
+      .plumber-theme h1,
+      .plumber-theme h2,
+      .plumber-theme h3,
+      .plumber-theme h4,
+      .plumber-theme h5 {
+        font-family: "Space Grotesk", sans-serif;
+        color: var(--plumber-ink);
+      }
+
+      .plumber-theme .header-top {
+        background: var(--plumber-deep);
+      }
+
+      .plumber-theme .header-top-text p {
+        color: #eaf4ff;
+      }
+
+      .plumber-theme .header-main {
+        background: #ffffff;
+        box-shadow: 0 14px 30px rgba(13, 33, 57, 0.08);
+      }
+
+      .plumber-theme .header-nav a {
+        color: var(--plumber-deep);
+        font-weight: 600;
+      }
+
+      .plumber-theme .header-nav a:hover {
+        color: var(--plumber-accent);
+      }
+
+      .plumber-theme .header-action-login {
+        color: var(--plumber-deep);
+      }
+
+      .plumber-theme .header-action-btn {
+        background: var(--plumber-accent);
+        color: #ffffff;
+        border-radius: 999px;
+      }
+
+      .plumber-theme .banner-area.plumber-hero {
+        position: relative;
+        padding-top: 150px;
+        overflow: hidden;
+        background: linear-gradient(120deg, #ffffff 0%, #f1f8ff 45%, #e6f1ff 100%);
+      }
+
+      .plumber-theme .banner-area.plumber-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 0.94), rgba(14, 42, 71, 0.1)),
+          url("https://source.unsplash.com/1600x1000/?plumber,plumbing,tools") center/cover no-repeat;
+        opacity: 0.55;
+      }
+
+      .plumber-theme .banner-area.plumber-hero .banner-single {
+        position: relative;
+        z-index: 2;
+      }
+
+      .plumber-theme .banner-content {
+        background: rgba(255, 255, 255, 0.94);
+        padding: 36px;
+        border-radius: 28px;
+        box-shadow: 0 24px 60px rgba(12, 30, 52, 0.16);
+      }
+
+      .plumber-theme .banner-content-title {
+        font-size: 42px;
+        line-height: 1.15;
+      }
+
+      .plumber-theme .banner-content-btn .theme-btn {
+        border-radius: 999px;
+      }
+
+      .plumber-theme .theme-btn {
+        background: var(--plumber-accent);
+        color: #ffffff;
+      }
+
+      .plumber-theme .theme-btn:hover {
+        background: #dd6d1a;
+        color: #ffffff;
+      }
+
+      .plumber-theme .theme-btn-primary {
+        background: var(--plumber-blue);
+      }
+
+      .plumber-theme .theme-btn-primary:hover {
+        background: #175b8d;
+      }
+
+      .plumber-theme .theme-btn-secondary {
+        background: var(--plumber-deep);
+      }
+
+      .plumber-theme .theme-btn-secondary:hover {
+        background: #0b2237;
+      }
+
+      .plumber-theme .banner-shape {
+        display: none;
+      }
+
+      .plumber-theme .hero-photo {
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: 0 18px 40px rgba(12, 30, 52, 0.2);
+        margin-bottom: 20px;
+      }
+
+      .plumber-theme .hero-photo img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+      }
+
+      .plumber-theme .audio-player-card {
+        border: 1px solid rgba(27, 109, 168, 0.2);
+        background: #ffffff;
+      }
+
+      .plumber-theme .section-subtitle {
+        color: var(--plumber-accent);
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .plumber-theme .plumber-problem {
+        background: linear-gradient(180deg, #ffffff 0%, #f1f8ff 100%);
+      }
+
+      .plumber-theme .plumber-problem .choose-item,
+      .plumber-theme .plumber-pricing .choose-item,
+      .plumber-theme .plumber-handles .alert,
+      .plumber-theme .plumber-faq .faq-item,
+      .plumber-theme .plumber-alerts .testimonial-item {
+        border-radius: 20px;
+        border: 1px solid rgba(14, 42, 71, 0.12);
+        background: #ffffff;
+        box-shadow: 0 16px 35px rgba(14, 42, 71, 0.08);
+      }
+
+      .plumber-theme .plumber-capture {
+        background: linear-gradient(120deg, #f7fbff 0%, #eaf4ff 100%);
+      }
+
+      .plumber-theme .plumber-handles .alert {
+        background: rgba(244, 122, 31, 0.12);
+        border-color: rgba(244, 122, 31, 0.3);
+      }
+
+      .plumber-theme .plumber-dashboard .live-call-img img,
+      .plumber-theme .plumber-call-demo .live-call-img img,
+      .plumber-theme .plumber-how .feature-left-img img,
+      .plumber-theme .plumber-how .feature-right-img .f-main-img {
+        border-radius: 24px;
+        box-shadow: 0 18px 40px rgba(12, 30, 52, 0.18);
+      }
+
+      .plumber-theme .feature-right-img .feature-shape-1,
+      .plumber-theme .feature-right-img .feature-shape-2,
+      .plumber-theme .feature-right-img .feature-shape-3 {
+        display: none;
+      }
+
+      .plumber-theme .faq-wrapper {
+        background: transparent;
+      }
+
+      .plumber-theme .faq-item {
+        padding: 16px 22px;
+      }
+
+      .plumber-theme .footer-area {
+        background: var(--plumber-deep);
+      }
+
+      .plumber-theme .footer-bottom-copyright p {
+        color: #eaf4ff;
+      }
+
+      @media (max-width: 991px) {
+        .plumber-theme .banner-content {
+          padding: 28px;
+        }
+
+        .plumber-theme .banner-content-title {
+          font-size: 34px;
+        }
+      }
+    </style>
+
   </head>
-  <body>
+  <body class="plumber-theme">
     <!-- Cursor start -->
     <div
       class="rts-cursor cursor-outer"
@@ -174,48 +386,16 @@
                         "
                       >
                         <li>
-                          <a
-                            href="#how-it-works"
-                            style="
-                              color: #222;
-                              font-weight: 500;
-                              text-decoration: none;
-                            "
-                            >How It Works</a
-                          >
+                          <a href="#how-it-works">How It Works</a>
                         </li>
                         <li>
-                          <a
-                            href="#what-it-handles"
-                            style="
-                              color: #222;
-                              font-weight: 500;
-                              text-decoration: none;
-                            "
-                            >What It Handles</a
-                          >
+                          <a href="#what-it-handles">What It Handles</a>
                         </li>
                         <li>
-                          <a
-                            href="#pricing"
-                            style="
-                              color: #222;
-                              font-weight: 500;
-                              text-decoration: none;
-                            "
-                            >Pricing</a
-                          >
+                          <a href="#pricing">Pricing</a>
                         </li>
                         <li>
-                          <a
-                            href="#faq"
-                            style="
-                              color: #222;
-                              font-weight: 500;
-                              text-decoration: none;
-                            "
-                            >FAQ</a
-                          >
+                          <a href="#faq">FAQ</a>
                         </li>
                       </ul>
                     </nav>
@@ -233,7 +413,7 @@
                           >
                             <path
                               d="M23 17.11a5.92 5.92 0 0 0-4.63-3.95 1.5 1.5 0 0 0-1.51.66l-1.26 1.81a.53.53 0 0 1-.61.2 13.25 13.25 0 0 1-3.6-2.14 13 13 0 0 1-2.94-3.52.5.5 0 0 1 .17-.69l1.63-1.09a1.52 1.52 0 0 0 .61-1.71 10.13 10.13 0 0 0-1.38-2.89 10.36 10.36 0 0 0-2.2-2.33A1.53 1.53 0 0 0 6 1.19a7.31 7.31 0 0 0-1.13.43A7.64 7.64 0 0 0 1.2 6.1a1.48 1.48 0 0 0 0 .93 24.63 24.63 0 0 0 6.53 10.41A24.76 24.76 0 0 0 17.12 23a1.41 1.41 0 0 0 .45.07 1.59 1.59 0 0 0 .48-.07 7.64 7.64 0 0 0 4.47-3.66A6.21 6.21 0 0 0 23 18a1.46 1.46 0 0 0 0-.89zm-1.33 1.74A6.61 6.61 0 0 1 17.73 22a.54.54 0 0 1-.31 0 23.61 23.61 0 0 1-9-5.29 23.74 23.74 0 0 1-6.27-10 .47.47 0 0 1 0-.31 6.59 6.59 0 0 1 3.14-3.88 5 5 0 0 1 1-.36h.1a.5.5 0 0 1 .32.11 9.4 9.4 0 0 1 2 2.09A9.07 9.07 0 0 1 9.9 7a.52.52 0 0 1-.21.6L8.06 8.64a1.54 1.54 0 0 0-.47 2 14.09 14.09 0 0 0 7 6.09 1.51 1.51 0 0 0 1.81-.58l1.21-1.81a.51.51 0 0 1 .51-.23A4.94 4.94 0 0 1 22 17.44a.58.58 0 0 1 0 .29 5.35 5.35 0 0 1-.38 1.12z"
-                              style="fill: #231f20"
+                              style="fill: currentColor"
                             />
                           </svg>
                           Call the Live Demo - (XXX) XXX-XXXX</a
@@ -253,7 +433,7 @@
           <!-- main start -->
           <main>
             <!-- banner area start -->
-            <section class="banner-area" id="hero">
+            <section class="banner-area plumber-hero" id="hero">
               <div class="container custom-container-1">
                 <div class="banner-single">
                   <div class="banner-content">
@@ -300,9 +480,8 @@
                         >Call the Live Demo - (XXX) XXX-XXXX</a
                       >
                       <a
-                        style="background: #2c3e50"
                         href="#get-started"
-                        class="theme-btn tp_fade_bottom"
+                        class="theme-btn theme-btn-secondary tp_fade_bottom"
                         >Get Started (Set Up AIVox)</a
                       >
                     </div>
@@ -311,6 +490,13 @@
                     </p>
                   </div>
                   <div class="banner-img tp_fade_left">
+                    <div class="hero-photo">
+                      <img
+                        src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                        alt="Plumber preparing tools for a service call"
+                        loading="lazy"
+                      />
+                    </div>
                     <div class="audio-player-card">
                       <div class="audio-player-header">
                         <div class="persona-avatar">
@@ -350,7 +536,7 @@
                         <p style="margin-bottom: 0; color: #4b5563">
                           <i
                             class="fa-solid fa-headphones"
-                            style="margin-right: 8px; color: #4a6cf7"
+                            style="margin-right: 8px; color: var(--plumber-blue)"
                           ></i>
                           <strong style="color: #222"
                             >Listen to AIVox in action.</strong
@@ -398,7 +584,7 @@
             <!-- banner area end -->
 
             <!-- problem area start -->
-            <section class="choose-area pt-140" id="problem">
+            <section class="choose-area pt-140 plumber-problem" id="problem">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12">
@@ -531,7 +717,7 @@
             <!-- problem area end -->
 
             <!-- how it works area start -->
-            <section class="feature-area pt-110 pb-110" id="how-it-works">
+            <section class="feature-area pt-110 pb-110 plumber-how" id="how-it-works">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12">
@@ -589,7 +775,7 @@
                   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
                     <div class="feature-left-img mb-30 tp_fade_right">
                       <img
-                        src="/static/images/feature/bg.png"
+                        src="https://source.unsplash.com/1200x900/?plumber,plumbing,pipes"
                         alt="Plumbing call workflow"
                         loading="lazy"
                       />
@@ -598,7 +784,7 @@
                   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
                     <div class="feature-right-img mb-30">
                       <img
-                        src="/static/images/feature/bg-1.png"
+                        src="https://source.unsplash.com/800x900/?plumber,phone"
                         alt="AIVox summary"
                         class="f-main-img tp_fade_left"
                         loading="lazy"
@@ -631,7 +817,7 @@
             <!-- how it works area end -->
 
             <!-- capture area start -->
-            <section class="apps-area pt-140 pb-140" id="what-it-captures">
+            <section class="apps-area pt-140 pb-140 plumber-capture" id="what-it-captures">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-xxl-8 col-xl-9 col-lg-10">
@@ -682,7 +868,7 @@
             <!-- capture area end -->
 
             <!-- call types area start -->
-            <section class="choose-area pt-140 pb-140" id="what-it-handles">
+            <section class="choose-area pt-140 pb-140 plumber-handles" id="what-it-handles">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12">
@@ -734,7 +920,7 @@
             <!-- call types area end -->
 
             <!-- example alerts area start -->
-            <section class="testimonial-area pt-80 pb-40 fix" id="example-alerts">
+            <section class="testimonial-area pt-80 pb-40 fix plumber-alerts" id="example-alerts">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-xl-7 col-lg-8">
@@ -812,7 +998,7 @@ Recording: [link]</pre
             <!-- example alerts area end -->
 
             <!-- dashboard area start -->
-            <section class="live-call-area pt-140 pb-140" id="dashboard">
+            <section class="live-call-area pt-140 pb-140 plumber-dashboard" id="dashboard">
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-lg-6">
@@ -838,7 +1024,7 @@ Recording: [link]</pre
                   <div class="col-lg-6">
                     <div class="live-call-img text-center">
                       <img
-                        src="/static/images/assistant/home4/ai-receptionist.jpg"
+                        src="https://source.unsplash.com/1200x900/?plumber,tablet"
                         alt="AIVox dashboard"
                         class="img-fluid"
                         loading="lazy"
@@ -851,7 +1037,7 @@ Recording: [link]</pre
             <!-- dashboard area end -->
 
             <!-- pricing area start -->
-            <section class="choose-area pt-140 pb-140" id="pricing">
+            <section class="choose-area pt-140 pb-140 plumber-pricing" id="pricing">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12">
@@ -878,7 +1064,7 @@ Recording: [link]</pre
                     <div
                       class="choose-item mb-30"
                       style="
-                        border: 3px solid #6a738b;
+                        border: 3px solid var(--plumber-slate);
                         position: relative;
                         height: 100%;
                       "
@@ -890,7 +1076,7 @@ Recording: [link]</pre
                         <h2
                           style="
                             font-size: 40px;
-                            color: #6a738b;
+                            color: var(--plumber-slate);
                             margin: 20px 0;
                           "
                         >
@@ -948,7 +1134,7 @@ Recording: [link]</pre
                     <div
                       class="choose-item mb-30"
                       style="
-                        border: 3px solid #4a6cf7;
+                        border: 3px solid var(--plumber-blue);
                         position: relative;
                         height: 100%;
                       "
@@ -958,7 +1144,7 @@ Recording: [link]</pre
                           position: absolute;
                           top: 20px;
                           right: 20px;
-                          background: #4a6cf7;
+                          background: var(--plumber-blue);
                           color: #fff;
                           padding: 5px 15px;
                           border-radius: 20px;
@@ -974,7 +1160,7 @@ Recording: [link]</pre
                         <h2
                           style="
                             font-size: 40px;
-                            color: #4a6cf7;
+                            color: var(--plumber-blue);
                             margin: 20px 0;
                           "
                         >
@@ -1018,11 +1204,10 @@ Recording: [link]</pre
                         </ul>
                         <a
                           href="#get-started"
-                          class="theme-btn"
+                          class="theme-btn theme-btn-primary"
                           style="
                             width: 100%;
                             text-align: center;
-                            background: #4a6cf7;
                           "
                           >Get Started</a
                         >
@@ -1036,7 +1221,7 @@ Recording: [link]</pre
                     <div
                       class="choose-item mb-30"
                       style="
-                        border: 3px solid #2c3e50;
+                        border: 3px solid var(--plumber-deep);
                         position: relative;
                         height: 100%;
                       "
@@ -1048,7 +1233,7 @@ Recording: [link]</pre
                         <h2
                           style="
                             font-size: 40px;
-                            color: #2c3e50;
+                            color: var(--plumber-deep);
                             margin: 20px 0;
                           "
                         >
@@ -1092,11 +1277,10 @@ Recording: [link]</pre
                         </ul>
                         <a
                           href="#get-started"
-                          class="theme-btn"
+                          class="theme-btn theme-btn-secondary"
                           style="
                             width: 100%;
                             text-align: center;
-                            background: #2c3e50;
                           "
                           >Get Started</a
                         >
@@ -1125,8 +1309,7 @@ Recording: [link]</pre
                       >
                       <a
                         href="#get-started"
-                        class="theme-btn tp_fade_bottom"
-                        style="background: #2c3e50"
+                        class="theme-btn theme-btn-secondary tp_fade_bottom"
                         >Get Started</a
                       >
                     </div>
@@ -1137,7 +1320,7 @@ Recording: [link]</pre
             <!-- pricing area end -->
 
             <!-- faq area start -->
-            <section class="faq-area pt-140 pb-140" id="faq">
+            <section class="faq-area pt-140 pb-140 plumber-faq" id="faq">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-12">
@@ -1252,7 +1435,7 @@ Recording: [link]</pre
             <!-- faq area end -->
 
             <!-- get started form start -->
-            <section class="choose-area pt-140 pb-140" id="get-started">
+            <section class="choose-area pt-140 pb-140 plumber-get-started" id="get-started">
               <div class="container">
                 <div class="row justify-content-center">
                   <div class="col-lg-8">
@@ -1392,7 +1575,7 @@ Recording: [link]</pre
             <!-- get started form end -->
 
             <!-- final cta area start -->
-            <section class="live-call-area pt-140 pb-140" id="call-demo">
+            <section class="live-call-area pt-140 pb-140 plumber-call-demo" id="call-demo">
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-lg-7">
@@ -1412,8 +1595,7 @@ Recording: [link]</pre
                         >
                         <a
                           href="#get-started"
-                          class="theme-btn"
-                          style="background: #2c3e50"
+                          class="theme-btn theme-btn-secondary"
                           >Get Started</a
                         >
                       </div>
@@ -1426,7 +1608,7 @@ Recording: [link]</pre
                   <div class="col-lg-5">
                     <div class="live-call-img text-center">
                       <img
-                        src="/static/images/assistant/home4/ai-receptionist.jpg"
+                        src="https://source.unsplash.com/1200x900/?plumbing,van"
                         alt="AIVox live demo"
                         class="img-fluid"
                         loading="lazy"
