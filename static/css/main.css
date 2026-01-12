@@ -5710,25 +5710,25 @@ Header CSS 01 Start
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
-.feature-item-1::after {
+/* .feature-item-1::after {
   position: absolute;
   right: -84px;
   top: 50%;
   transform: translateY(-50%);
   content: url("../../static/images/feature/shape-4.png");
-}
+} */
 @media (max-width: 1199px) {
   .feature-item-1::after {
     display: none;
   }
 }
-.feature-item-2::after {
+/* .feature-item-2::after {
   position: absolute;
   right: -84px;
   top: 50%;
   transform: translateY(-50%);
   content: url("../../static/images/feature/shape-5.png");
-}
+} */
 @media (max-width: 1199px) {
   .feature-item-2::after {
     display: none;
