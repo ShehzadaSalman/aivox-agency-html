@@ -72,7 +72,7 @@
                 top: -5px;
                 right: 25px;
                 content: "";
-                background: linear-gradient(180deg, #1FDB00 0%, #099B18 93.72%);
+                background: var(--clr-theme-primary);
                 color: #FFF;
                 text-align: center;
                 font-size: 12px;
@@ -111,7 +111,7 @@
             line-height: 22px;
             letter-spacing: -0.39px;
             display: inline-block;
-            background: rgba(125, 37, 236, 0.10);
+            background: rgba(91, 91, 91, 0.10);
             height: 22px;
             padding: 0 20px;
             margin-bottom: 35px;
@@ -184,7 +184,7 @@
                     width: 6px;
                     height: 6px;
                     border-radius: 6px;
-                    background: linear-gradient(180deg, #1FDB00 0%, #099B18 93.72%);
+                    background: var(--clr-theme-primary);
                     top: 7px;
                 }
                 &:last-child {
@@ -231,7 +231,7 @@
             top: -30px;
             right: -45px;
             content: "";
-            background: linear-gradient(180deg, #1FDB00 0%, #099B18 93.72%);
+            background: var(--clr-theme-primary);
             color: #FFF;
             text-align: center;
             font-size: 13px;

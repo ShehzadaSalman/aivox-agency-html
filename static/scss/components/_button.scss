@@ -7,7 +7,7 @@
 
 .theme-btn {
     border-radius: 50px;
-    background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+    background: var(--clr-theme-primary);
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
@@ -17,7 +17,7 @@
     padding: 0 25px;
     @include transition(.3s);
     &:hover {
-        background: linear-gradient(180deg, #7D25EC 0%, #9425EC 100%);
+        background: #b9b9b9;
         color: #fff;
     }
 }
@@ -25,7 +25,7 @@
 // theme btn 2 
 .theme-btn-2 {
     border-radius: 8px;
-    background: linear-gradient(180deg, #9425EC 0%, #7D25EC 100%);
+    background: var(--clr-theme-primary);
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
@@ -35,7 +35,7 @@
     padding: 0 30px;
     @include transition(.3s);
     &:hover {
-        background: linear-gradient(180deg, #7D25EC 0%, #9425EC 100%);
+        background: #b9b9b9;
         color: #fff;
     }
 }

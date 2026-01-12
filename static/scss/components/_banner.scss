@@ -41,7 +41,7 @@
     }
     &-subtitle {
       border-radius: 50px;
-      background: rgba(125, 37, 236, 0.1);
+      background: rgba(91, 91, 91, 0.1);
       box-shadow: 0px 2px 4px 0px rgba(27, 42, 82, 0.2);
       display: inline-block;
       color: #7d25ec;
@@ -371,7 +371,7 @@
       }
       button {
         border-radius: 8px;
-        background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+        background: var(--clr-theme-primary);
         border: none;
         color: #fff;
         font-size: 14px;
@@ -840,7 +840,7 @@
       }
       button {
         border-radius: 8px;
-        background: linear-gradient(180deg, #9425ec 0%, #7d25ec 100%);
+        background: var(--clr-theme-primary);
         border: none;
         color: #fff;
         font-size: 14px;
@@ -927,8 +927,8 @@
   &-area {
     background: linear-gradient(
       180deg,
-      rgba(125, 37, 236, 0.2) 0%,
-      rgba(125, 37, 236, 0.04) 100%
+      rgba(91, 91, 91, 0.2) 0%,
+      rgba(91, 91, 91, 0.04) 100%
     );
     position: relative;
   }
