@@ -10,17 +10,17 @@ Color Declaration
 /////////////////////////////////////////////////////////// */
 :root {
   --clr-common-white: #ffffff;
-  --clr-common-black: #0b0b0b;
-  --clr-common-primary: #b9b9b9;
-  --clr-common-gray: #3d3d3d;
-  --clr-common-border: #c7c7c7;
-  --clr-body-heading: #1a1a1a;
-  --clr-body-text: #4b4b4b;
-  --clr-color-violet: #7d7d7d;
-  --clr-theme-primary: #5b5b5b;
-  --clr-bg-gray: #f4f4f4;
-  --clr-bg-gray-2: #ededed;
-  --clr-bg-gray-3: #e4e4e4;
+  --clr-common-black: #111827;
+  --clr-common-primary: #2563eb;
+  --clr-common-gray: #111827;
+  --clr-common-border: #e5e7eb;
+  --clr-body-heading: #111827;
+  --clr-body-text: #111827;
+  --clr-color-violet: #2563eb;
+  --clr-theme-primary: #2563eb;
+  --clr-bg-gray: #f8fafc;
+  --clr-bg-gray-2: #f8fafc;
+  --clr-bg-gray-3: #e5e7eb;
 }
 
 /* ///////////////////////////////////////////////////////////
@@ -60,8 +60,8 @@ Audio Player in Banner
   border-radius: 50%;
   overflow: hidden;
   margin-right: 15px;
-  border: 3px solid #b9b9b9;
-  box-shadow: 0 4px 12px rgba(91, 91, 91, 0.2);
+  border: 3px solid var(--clr-common-border);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .persona-avatar img {
@@ -73,13 +73,13 @@ Audio Player in Banner
 .persona-info h5 {
   margin: 0;
   font-size: 16px;
-  color: #1a1a1a;
+  color: var(--clr-body-heading);
   font-weight: 600;
 }
 
 .persona-info span {
   font-size: 13px;
-  color: #4b4b4b;
+  color: var(--clr-body-text);
   display: block;
   margin-top: 2px;
 }
@@ -96,7 +96,7 @@ Audio Player in Banner
 .wave-segment {
   width: 8px;
   height: calc(var(--height, 0.5) * 30px);
-  background: #1a1a1a;
+  background: var(--clr-body-heading);
   border-radius: 4px;
   transition: height 0.3s ease;
   animation: wave 1.5s ease-in-out infinite;
@@ -133,7 +133,7 @@ Audio Player in Banner
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #1a1a1a;
+  background: var(--clr-body-heading);
   border: none;
   color: white;
   display: flex;
@@ -147,7 +147,7 @@ Audio Player in Banner
 
 .play-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(91, 91, 91, 0.4);
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.35);
 }
 
 .play-btn i {
@@ -162,7 +162,7 @@ Audio Player in Banner
 .progress-bar {
   width: 100%;
   height: 6px;
-  background: #e4e4e4;
+  background: var(--clr-bg-gray-3);
   border-radius: 3px;
   overflow: hidden;
   margin-bottom: 5px;
@@ -171,30 +171,30 @@ Audio Player in Banner
 .progress {
   width: 30%;
   height: 100%;
-  background: #1a1a1a;
+  background: var(--clr-theme-primary);
   border-radius: 3px;
   transition: width 0.1s linear;
 }
 
 .time-display {
   font-size: 12px;
-  color: #4b4b4b;
+  color: var(--clr-body-text);
   text-align: right;
 }
 
 .transcript-preview {
-  background: #f8f9ff;
+  background: var(--clr-bg-gray);
   border-radius: 12px;
   padding: 15px;
   margin-top: 15px;
-  border-left: 3px solid #b9b9b9;
+  border-left: 3px solid var(--clr-theme-primary);
 }
 
 .transcript-preview p {
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
-  color: #5a5a5a;
+  color: var(--clr-body-text);
   font-style: italic;
 }
 
@@ -208,37 +208,37 @@ Audio Player in Banner
 .audio-player-caption {
   margin-top: 15px;
   padding: 12px 15px;
-  background: #f2f2f2;
+  background: var(--clr-bg-gray-2);
   border-radius: 8px;
   font-size: 14px;
-  color: #5a5a5a;
+  color: var(--clr-body-text);
   display: flex;
   align-items: center;
-  border: 1px dashed rgba(91, 91, 91, 0.2);
+  border: 1px dashed rgba(37, 99, 235, 0.25);
   animation: pulse 2s infinite;
 }
 
 .audio-player-caption i {
   font-size: 16px;
   margin-right: 8px;
-  color: #b9b9b9;
+  color: var(--clr-theme-primary);
 }
 
 .audio-player-caption strong {
-  color: #b9b9b9;
+  color: var(--clr-theme-primary);
   font-weight: 600;
   margin-right: 5px;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(91, 91, 91, 0.1);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.1);
   }
   70% {
-    box-shadow: 0 0 0 5px rgba(91, 91, 91, 0);
+    box-shadow: 0 0 0 5px rgba(37, 99, 235, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(91, 91, 91, 0);
+    box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
   }
 }
 
@@ -258,7 +258,11 @@ Audio Player in Banner
 Redesigned Live Call Section
 /////////////////////////////////////////////////////////// */
 .live-call-area {
-  background: linear-gradient(135deg, #f8f9ff 0%, #f0f2ff 100%);
+  background: linear-gradient(
+    135deg,
+    var(--clr-bg-gray) 0%,
+    rgba(37, 99, 235, 0.06) 100%
+  );
   position: relative;
   overflow: hidden;
   padding: 100px 0;
@@ -285,7 +289,7 @@ Redesigned Live Call Section
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
   margin-top: 40px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(91, 91, 91, 0.1);
+  border: 1px solid var(--clr-common-border);
 }
 
 .live-call-content:hover {
@@ -297,9 +301,9 @@ Redesigned Live Call Section
   font-size: 2.5rem;
   line-height: 1.2;
   margin-bottom: 20px;
-  color: #1a1a1a;
+  color: var(--clr-body-heading);
   font-weight: 700;
-  background: #1a1a1a;
+  background: var(--clr-body-heading);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -308,7 +312,7 @@ Redesigned Live Call Section
 
 .live-call-content p {
   font-size: 1.1rem;
-  color: #5a5a5a;
+  color: var(--clr-body-text);
   line-height: 1.8;
   margin-bottom: 30px;
 }
@@ -328,11 +332,11 @@ Redesigned Live Call Section
 }
 
 .feature-item {
-  background: rgba(91, 91, 91, 0.03);
+  background: #ffffff;
   border-radius: 15px;
   padding: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(91, 91, 91, 0.1);
+  border: 1px solid var(--clr-common-border);
 }
 
 .feature-item:hover {
@@ -343,33 +347,33 @@ Redesigned Live Call Section
 .feature-icon {
   width: 60px;
   height: 60px;
-  background: rgba(91, 91, 91, 0.1);
+  background: rgba(37, 99, 235, 0.1);
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #b9b9b9;
+  color: var(--clr-theme-primary);
   font-size: 24px;
   margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
 .feature-item:hover .feature-icon {
-  background: #b9b9b9;
-  color: white;
+  background: var(--clr-theme-primary);
+  color: var(--clr-common-white);
   transform: scale(1.1);
 }
 
 .feature-item h5 {
   font-size: 1.2rem;
-  color: #1a1a1a;
+  color: var(--clr-body-heading);
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 .feature-item p {
   font-size: 0.95rem;
-  color: #4b4b4b;
+  color: var(--clr-body-text);
   margin: 0;
   line-height: 1.6;
 }
@@ -385,10 +389,10 @@ Redesigned Live Call Section
   border-radius: 50px;
   transition: all 0.3s ease;
   text-decoration: none;
-  background: #b9b9b9;
+  background: var(--clr-theme-primary);
   color: white;
   border: 2px solid transparent;
-  box-shadow: 0 10px 25px rgba(91, 91, 91, 0.3);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -397,8 +401,8 @@ Redesigned Live Call Section
 /* Outline Button Variant */
 .live-call-cta .theme-btn.btn-outline {
   background: transparent;
-  color: #b9b9b9;
-  border: 2px solid #b9b9b9;
+  color: var(--clr-theme-primary);
+  border: 2px solid var(--clr-theme-primary);
   box-shadow: none;
   position: relative;
   z-index: 1;
@@ -406,7 +410,7 @@ Redesigned Live Call Section
 
 .live-call-cta .theme-btn.btn-outline:hover {
   color: white;
-  border-color: #b9b9b9;
+  border-color: var(--clr-theme-primary);
 }
 
 .live-call-cta .theme-btn i {
@@ -424,7 +428,7 @@ Redesigned Live Call Section
   left: 0;
   width: 0;
   height: 100%;
-  background: #b9b9b9;
+  background: var(--clr-theme-primary);
   transition: all 0.3s ease;
   z-index: -1;
 }
@@ -434,7 +438,7 @@ Redesigned Live Call Section
 }
 
 .live-call-cta .theme-btn.btn-outline:before {
-  background: #b9b9b9;
+  background: var(--clr-theme-primary);
 }
 
 /* Feature Icons */
@@ -588,11 +592,11 @@ Redesigned Live Call Section
 }
 
 .theme-btn:hover {
-  background: transparent;
-  color: var(--clr-theme-primary);
-  border-color: var(--clr-theme-primary);
+  background: #1d4ed8;
+  color: var(--clr-common-white);
+  border-color: #1d4ed8;
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(91, 91, 91, 0.2);
+  box-shadow: 0 10px 20px rgba(29, 78, 216, 0.25);
 }
 
 /* Responsive Styles */
@@ -6346,7 +6350,7 @@ Header CSS 01 Start
 10. apps
 /////////////////////////////////////////////////////////// */
 .apps-area {
-  background: #f2f8fd;
+  background: #F8FAFC;
   position: relative;
   z-index: 1;
 }
@@ -6875,7 +6879,7 @@ Header CSS 01 Start
 12. testimonial
 /////////////////////////////////////////////////////////// */
 .testimonial-area {
-  background: linear-gradient(180deg, rgba(242, 248, 253, 0) 0%, #f2f8fd 100%);
+  background: linear-gradient(180deg, rgba(242, 248, 253, 0) 0%, #F8FAFC 100%);
 }
 .testimonial-item {
   border-radius: 10px;

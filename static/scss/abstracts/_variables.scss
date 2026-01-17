@@ -29,25 +29,25 @@ Color Declaration
 $colors: (
     common: (
         white: "#FFFFFF",
-        black: "#0B0B0B",
-        primary: "#B9B9B9",
-        gray: "#3D3D3D",
-        border: "#C7C7C7",
+        black: "#111827",
+        primary: "#2563EB",
+        gray: "#111827",
+        border: "#E5E7EB",
     ),
     body: (
-        heading: "#1A1A1A",
-        text: "#4B4B4B",
+        heading: "#111827",
+        text: "#111827",
     ),
     color: (
-      violet: "#7D7D7D",
+      violet: "#2563EB",
     ),
     theme: (
-        primary: "#5B5B5B",
+        primary: "#2563EB",
     ),
     bg: (
-        gray: "#F4F4F4",
-        gray-2: "#EDEDED",
-        gray-3: "#E4E4E4",
+        gray: "#F8FAFC",
+        gray-2: "#F8FAFC",
+        gray-3: "#E5E7EB",
     )
 );
 
