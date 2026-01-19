@@ -698,7 +698,6 @@ Redesigned Live Call Section
 /* Responsive Styles */
 @media (max-width: 991px) {
   .live-call-content {
-    padding-right: 0;
     margin-bottom: 50px;
     text-align: center;
   }
