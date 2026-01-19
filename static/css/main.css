@@ -378,6 +378,102 @@ Redesigned Live Call Section
   line-height: 1.6;
 }
 
+.stats-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.stats-section {
+  background: radial-gradient(
+      circle at top,
+      rgba(37, 99, 235, 0.18),
+      transparent 55%
+    ),
+    #0b1220;
+}
+
+.stats-section .section-subtitle,
+.stats-section .section-title,
+.stats-section .tp_desc_anim {
+  color: #e5e7eb;
+}
+
+.stats-section .section-title {
+  color: #ffffff;
+}
+
+.stats-card {
+  background: rgba(12, 17, 28, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  min-height: 220px;
+  box-shadow: 0 20px 40px rgba(5, 8, 15, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.stats-card .stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.stats-card-1 .stat-icon {
+  background: rgba(124, 58, 237, 0.2);
+  color: #a78bfa;
+}
+
+.stats-card-2 .stat-icon {
+  background: rgba(236, 72, 153, 0.2);
+  color: #f472b6;
+}
+
+.stats-card-3 .stat-icon {
+  background: rgba(249, 115, 22, 0.2);
+  color: #fdba74;
+}
+
+.stats-card .stat-number {
+  font-size: 76px;
+  line-height: 1;
+  margin-bottom: 12px;
+  color: #a78bfa;
+  letter-spacing: -1px;
+}
+
+.stats-card-2 .stat-number {
+  color: #f472b6;
+}
+
+.stats-card-3 .stat-number {
+  color: #fdba74;
+}
+
+.stats-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d1d5db;
+}
+
+@media (max-width: 991px) {
+  .stats-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Primary Button */
 .live-call-cta .theme-btn {
   display: inline-flex;
@@ -3060,13 +3156,26 @@ Header CSS 01 Start
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background: #1a1a1a;
+  background: #2563EB;
   display: block;
   padding: 0 30px;
 }
 .header-action-btn:hover {
   color: #fff;
-  background: #b9b9b9;
+  background: #1D4ED8;
+} 
+
+
+/* Secondary CTA: outline/ghost */
+.btn-secondary{
+  background:transparent;
+  color:#2563EB;
+  border:1.5px solid #2563EB;
+}
+.btn-secondary:hover{
+  background:#EFF6FF;
+  color:#1D4ED8;
+  border-color:#1D4ED8;
 }
 
 /* ///////////////////////////////////////////////////////////
@@ -3897,14 +4006,15 @@ Header CSS 01 Start
 /////////////////////////////////////////////////////////// */
 .theme-btn {
   border-radius: 50px;
-  background: #b9b9b9;
-  color: #fff;
   font-size: 14px;
   font-weight: 600;
   display: inline-block;
   height: 46px;
   line-height: 45px;
   padding: 0 25px;
+  background:transparent;
+  color:#2563EB;
+  border:1.5px solid #2563EB;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -ms-transition: all 0.3s linear 0s;
@@ -3912,8 +4022,9 @@ Header CSS 01 Start
   transition: all 0.3s linear 0s;
 }
 .theme-btn:hover {
-  background: #b9b9b9;
-  color: #fff;
+  background:#EFF6FF;
+  color:#1D4ED8;
+  border-color:#1D4ED8;
 }
 
 .theme-btn-2 {
