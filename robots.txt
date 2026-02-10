@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aivox.agency/sitemap.xml
+Sitemap: https://sistemevoice.com/sitemap.xml
