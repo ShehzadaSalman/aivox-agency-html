@@ -11,13 +11,15 @@ Color Declaration
 :root {
   --clr-common-white: #ffffff;
   --clr-common-black: #111827;
-  --clr-common-primary: #2563eb;
+  /* --clr-common-primary: #2563eb; */
+  --clr-common-primary: #e15c31;
   --clr-common-gray: #111827;
   --clr-common-border: #e5e7eb;
   --clr-body-heading: #111827;
   --clr-body-text: #111827;
   --clr-color-violet: #2563eb;
-  --clr-theme-primary: #2563eb;
+  /* --clr-theme-primary: #2563eb; */
+  --clr-theme-primary: #e15c31;
   --clr-bg-gray: #f8fafc;
   --clr-bg-gray-2: #f8fafc;
   --clr-bg-gray-3: #e5e7eb;
@@ -2988,7 +2990,7 @@ Header CSS 01 Start
   z-index: 99;
 }
 .header-top {
-  background: #1a1a1a;
+  background: #e15c31;
   height: 40px;
   display: flex;
   align-items: center;
@@ -3155,13 +3157,15 @@ Header CSS 01 Start
   height: 40px;
   line-height: 40px;
   border-radius: 50px;
-  background: #2563EB;
+  /* background: #2563EB; */
+  background-color: #e15c31;
   display: block;
   padding: 0 30px;
 }
 .header-action-btn:hover {
   color: #fff;
-  background: #1D4ED8;
+  /* background: #1D4ED8; */
+  background-color: #e15c30;
 } 
 
 
@@ -4012,8 +4016,10 @@ Header CSS 01 Start
   line-height: 45px;
   padding: 0 25px;
   background:transparent;
-  color:#2563EB;
-  border:1.5px solid #2563EB;
+  /* color:#2563EB; */
+  color: #e15c31;
+  /* border:1.5px solid #2563EB; */
+  border: 1.5px solid #e15c31;
   -webkit-transition: all 0.3s linear 0s;
   -moz-transition: all 0.3s linear 0s;
   -ms-transition: all 0.3s linear 0s;
@@ -4022,8 +4028,10 @@ Header CSS 01 Start
 }
 .theme-btn:hover {
   background:#EFF6FF;
-  color:#1D4ED8;
-  border-color:#1D4ED8;
+  /* color:#1D4ED8; */
+  color: #e15c31;
+  /* border-color:#1D4ED8; */
+  border-color: #e15c31;
 }
 
 .theme-btn-2 {
